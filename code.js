@@ -27,18 +27,3 @@ function dijkstra(graph, sourceNode) {
     }
     return distance;
 }
-
-//Here's an example with the graph from the video
-//[edge, weight]
-console.log(
-    dijkstra([
-        [[1, 2], [2, 1], [3, 4]],       //node A
-        [[2, 1], [4, 10], [5, 2]],      //node B
-        [[0, 9], [4, 8]],               //node C
-        [[2, 2]],                       //node D
-        [[3, 7], [6, 1]],               //node E
-        [[7, 3]],                       //node F
-        [[4, 4], [5, 2]],               //node G
-        [[6, 1]],                       //node H
-    ], 2)
-);
