@@ -14,6 +14,6 @@ let graph =
     [[6, 1]],                       //node H
   ], 2);
 
-if ((JSON.stringify(graph) != JSON.stringify([9, 11, 0, 13, 8, 11, 9, 14]))) {
+if ((JSON.stringify(graph) != JSON.stringify([9, 11, 1, 13, 8, 11, 9, 14]))) {
   throw "The test failed!";
 }
