@@ -20,3 +20,27 @@ to be the most efficient one!
 
 What is the big $\Theta$ complexity of your implementation? Add your
 answer, including your reasoning, to this markdown file.
+
+## Answer
+
+Here's an outline of my code:
+```
+initialize arrays
+
+while (there are unmarked vertices) {
+
+    for (all vertices) {
+        check if the vertex is the smallest
+    }
+
+    mark the smallest vertex
+
+    for (each edge on the currect vertex) {
+        set the minimum known distace
+    }
+}
+```
+The outer while loop takes $|V|$ time to complete, and the first for loop alst takes $|V|$ time, making this part take $|V|^2$ time.  The second for loop will traverse all the edges connected to a single node, so after the whole program runs, it will have taken $|E|$ time.  Therefore, the time complexity of this implementation is $\Theta(|V|^2+|E|)$
+
+
+
